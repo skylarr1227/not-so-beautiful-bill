@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trump 2025 Infographic</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+    }
+    header {
+      background: #1f1f1f;
+      color: #fff;
+      padding: 2rem;
+      text-align: center;
+      border-bottom: 1px solid #333;
+    }
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      padding: 2rem;
+      justify-content: center;
+    }
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 300px;
+      background: #1e1e1e;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.6);
+      padding: 1rem 1.25rem;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      color: #90caf9;
+      margin-bottom: 0.5rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 0.25rem;
+    }
+    .card p {
+      margin: 0.25rem 0;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0,0,0,0.8);
+      animation: fadeInBg 0.3s ease;
+    }
+    .modal-content {
+      background-color: #1e1e1e;
+      margin: 10% auto;
+      padding: 2rem;
+      border: 1px solid #444;
+      width: 90%;
+      max-width: 600px;
+      color: #e0e0e0;
+      border-radius: 8px;
+      animation: fadeIn 0.4s ease;
+    }
+    .close {
+      color: #bbb;
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .close:hover,
+    .close:focus {
+      color: #fff;
+      text-decoration: none;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.8rem;
+      color: #888;
+      background: #1f1f1f;
+      border-top: 1px solid #333;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.9); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes fadeInBg {
+      from { background-color: rgba(0, 0, 0, 0); }
+      to { background-color: rgba(0, 0, 0, 0.8); }
+    }
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+        padding: 1rem;
+      }
+      .card {
+        width: 90%;
+        margin: 0 auto;
+      }
+      .modal-content {
+        width: 95%;
+        margin: 30% auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Trump 2025 Infographic</h1>
+    <p>Visual Breakdown of Pros & Cons by Policy Area</p>
+  </header>
+  <!-- Cards and Modals will be assumed to follow -->
+  <footer>
+    Generated for educational and informational purposes – 2025
+  </footer>
+  <script>
+    function openModal(id) {
+      document.getElementById(id).style.display = 'block';
+    }
+    function closeModal(event) {
+      if (event.target.classList.contains('modal') || event.target.classList.contains('close')) {
+        document.querySelectorAll('.modal').forEach(m => m.style.display = 'none');
+      }
+    }
+  </script>
+</body>
+</html>
