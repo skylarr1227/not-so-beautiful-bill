@@ -35,10 +35,10 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.6);
       padding: 1rem 1.25rem;
       cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
     .card:hover {
-      transform: scale(1.02);
+      transform: translateY(-3px);
       box-shadow: 0 0 20px rgba(255,255,255,0.1);
     }
     .card h2 {
@@ -61,7 +61,6 @@
       height: 100%;
       overflow: auto;
       background-color: rgba(0,0,0,0.8);
-      animation: fadeInBg 0.3s ease;
     }
     .modal-content {
       background-color: #1e1e1e;
@@ -98,11 +97,7 @@
       from { opacity: 0; transform: scale(0.9); }
       to { opacity: 1; transform: scale(1); }
     }
-    @keyframes fadeInBg {
-      from { background-color: rgba(0, 0, 0, 0); }
-      to { background-color: rgba(0, 0, 0, 0.8); }
-    }
-    @media (max-width: 768px) {
+      @media (max-width: 768px) {
       .section {
         flex-direction: column;
         padding: 1rem;
@@ -116,17 +111,165 @@
         margin: 30% auto;
       }
     }
-  </style>
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .modal {
+      animation: fadeInBg 0.3s ease;
+    }
+    @keyframes fadeInBg {
+      from { background-color: rgba(0, 0, 0, 0); }
+      to { background-color: rgba(0, 0, 0, 0.8); }
+    }
+</style>
 </head>
 <body>
   <header>
     <h1>Trump 2025 Infographic</h1>
     <p>Visual Breakdown of Pros & Cons by Policy Area</p>
   </header>
-  <!-- Cards and Modals will be assumed to follow -->
+  <div class="section">
+    <div class="card" onclick="openModal('modal-tax')">
+      <h2>Taxes & Economy</h2>
+      <p><strong>🟢 Pro:</strong> Permanent tax cuts, pro-growth incentives</p>
+      <p><strong>🔴 Con:</strong> Cuts revenue, favors wealthy</p>
+    </div>
+    <div class="card" onclick="openModal('modal-energy')">
+      <h2>Energy & Climate</h2>
+      <p><strong>🟢 Pro:</strong> Domestic energy push, streamlined permits</p>
+      <p><strong>🔴 Con:</strong> Weakens climate protections</p>
+    </div>
+    <div class="card" onclick="openModal('modal-health')">
+      <h2>Healthcare</h2>
+      <p><strong>🟢 Pro:</strong> Cuts waste, Medicaid work requirement</p>
+      <p><strong>🔴 Con:</strong> Cuts gender and abortion care</p>
+    </div>
+    <div class="card" onclick="openModal('modal-immigration')">
+      <h2>Immigration</h2>
+      <p><strong>🟢 Pro:</strong> Border wall, remittance tax</p>
+      <p><strong>🔴 Con:</strong> Harms legal migrants</p>
+    </div>
+    <div class="card" onclick="openModal('modal-education')">
+      <h2>Education</h2>
+      <p><strong>🟢 Pro:</strong> Loan caps, Pell for job training</p>
+      <p><strong>🔴 Con:</strong> Cuts forgiveness, hurts low-income students</p>
+    </div>
+    <div class="card" onclick="openModal('modal-defense')">
+      <h2>Defense</h2>
+      <p><strong>🟢 Pro:</strong> Modernization, AI, Indo-Pacific deterrence</p>
+      <p><strong>🔴 Con:</strong> Costly, potential arms race</p>
+    </div>
+    <div class="card" onclick="openModal('modal-regulation')">
+      <h2>Regulation</h2>
+      <p><strong>🟢 Pro:</strong> Congressional oversight of regulations</p>
+      <p><strong>🔴 Con:</strong> Slows emergency responses</p>
+    </div>
+    <div class="card" onclick="openModal('modal-workforce')">
+      <h2>Federal Workforce</h2>
+      <p><strong>🟢 Pro:</strong> Cuts pensions, eases firing</p>
+      <p><strong>🔴 Con:</strong> Politicizes civil service</p>
+    </div>
+    <div class="card" onclick="openModal('modal-debt')">
+      <h2>Debt & Deficit</h2>
+      <p><strong>🟢 Pro:</strong> Slows entitlement growth</p>
+      <p><strong>🔴 Con:</strong> Adds $4T to debt ceiling</p>
+    </div>
+    <div class="card" onclick="openModal('modal-equity')">
+      <h2>Equity & Public Services</h2>
+      <p><strong>🟢 Pro:</strong> Prioritizes citizens, work-based aid</p>
+      <p><strong>🔴 Con:</strong> Cuts services for poor & marginalized</p>
+    </div>
+  </div>
+
+  <!-- Modal Template -->
+  <div id="modal-tax" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+      <h2>Taxes & Economy</h2>
+      <p><strong>🟢 Pro:</strong> Makes 2017 tax cuts permanent, expands deductions for service and tipped workers, incentivizes small business growth through pass-through provisions and investment write-offs.</p>
+      <p><strong>🔴 Con:</strong> Greatly reduces federal revenue while increasing defense and infrastructure spending. Wealthiest households and corporations gain the most, increasing inequality.</p>
+    </div>
+  </div>
+  <div id="modal-energy" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+      <h2>Energy & Climate</h2>
+      <p><strong>🟢 Pro:</strong> Accelerates oil and gas permits, restores Arctic drilling and boosts fossil fuel production on public lands, aiming to lower energy costs and dependency.</p>
+      <p><strong>🔴 Con:</strong> Repeals most clean energy incentives from the IRA and slashes EPA funding, undermining climate targets and environmental protections.</p>
+    </div>
+  </div>
+  <div id="modal-health" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+      <h2>Healthcare</h2>
+      <p><strong>🟢 Pro:</strong> Streamlines Medicaid by removing ineligible enrollees and adds work requirements to encourage employment. Redirects funds away from abortion services toward other programs.</p>
+      <p><strong>🔴 Con:</strong> Reduces access to care for vulnerable populations, especially low-income, transgender, and reproductive-age patients, due to restrictions on gender-affirming and abortion-related services.</p>
+    </div>
+  </div>
+  <div id="modal-immigration" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+      <h2>Immigration</h2>
+      <p><strong>🟢 Pro:</strong> Increases Border Patrol funding, builds barriers, imposes remittance taxes, and funds more immigration judges to reduce backlogs and discourage illegal crossings.</p>
+      <p><strong>🔴 Con:</strong> May penalize legal immigrants, raise humanitarian concerns, and expand detention and surveillance at the expense of civil liberties.</p>
+    </div>
+  </div>
+  <div id="modal-education" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+      <h2>Education</h2>
+      <p><strong>🟢 Pro:</strong> Imposes borrowing caps, expands Pell eligibility to job-focused programs, and holds colleges accountable for student loan defaults to improve educational outcomes.</p>
+      <p><strong>🔴 Con:</strong> Ends student loan forgiveness options and reduces access to financial aid for low-income and part-time students, limiting educational equity.</p>
+    </div>
+  </div>
+  <div id="modal-defense" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+      <h2>Defense</h2>
+      <p><strong>🟢 Pro:</strong> Boosts defense funding for AI, cybersecurity, and Indo-Pacific readiness. Upgrades outdated infrastructure and enhances U.S. military deterrence abroad.</p>
+      <p><strong>🔴 Con:</strong> High spending may crowd out domestic priorities and fuel a global arms race, while oversight on military contracting remains weak.</p>
+    </div>
+  </div>
+  <div id="modal-regulation" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+      <h2>Regulation</h2>
+      <p><strong>🟢 Pro:</strong> REINS Act requires Congressional approval for major federal rules, increasing democratic accountability and limiting regulatory overreach by agencies.</p>
+      <p><strong>🔴 Con:</strong> May delay critical regulations in emergencies, such as pandemics or environmental disasters, due to added procedural hurdles.</p>
+    </div>
+  </div>
+  <div id="modal-workforce" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+      <h2>Federal Workforce</h2>
+      <p><strong>🟢 Pro:</strong> Raises employee contributions to pensions and allows more flexible hiring/firing, aimed at improving performance and cutting costs.</p>
+      <p><strong>🔴 Con:</strong> Could reduce job security and politicize hiring, deterring talent and weakening the merit-based civil service system.</p>
+    </div>
+  </div>
+  <div id="modal-debt" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+      <h2>Debt & Deficit</h2>
+      <p><strong>🟢 Pro:</strong> Caps entitlement spending and imposes work requirements to reduce long-term federal outlays and encourage self-reliance.</p>
+      <p><strong>🔴 Con:</strong> Despite cuts, it raises the debt ceiling by $4 trillion and may worsen deficits due to major tax breaks and military spending increases.</p>
+    </div>
+  </div>
+  <div id="modal-equity" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal(event)">&times;</span>
+      <h2>Equity & Public Services</h2>
+      <p><strong>🟢 Pro:</strong> Aligns benefits with citizenship status and promotes work-based eligibility to ensure aid goes to qualified recipients.</p>
+      <p><strong>🔴 Con:</strong> Cuts funding to programs that support low-income, LGBTQ+, and immigrant communities, potentially deepening social inequities.</p>
+    </div>
+  </div>
+
   <footer>
     Generated for educational and informational purposes – 2025
   </footer>
+
   <script>
     function openModal(id) {
       document.getElementById(id).style.display = 'block';
