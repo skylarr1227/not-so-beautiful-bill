@@ -127,11 +127,34 @@
 </style>
 </head>
 <body>
-  <header>
-    <h1>Trump 2025 Infographic</h1>
-    <p>Visual Breakdown of Pros & Cons by Policy Area</p>
-  </header>
   <div class="section">
+    <div class="card" onclick="openModal('modal-executive')">
+      <h2>Executive Powers</h2>
+      <p><strong>🟢 Pro:</strong> Redirects DHS funds, emergency control</p>
+      <p><strong>🔴 Con:</strong> Expands unilateral presidential authority</p>
+    </div>
+    <div class="card" onclick="openModal('modal-congress')">
+      <h2>Congressional Authority</h2>
+      <p><strong>🟢 Pro:</strong> Enables reconciliation, bypasses filibuster</p>
+      <p><strong>🔴 Con:</strong> Redirects appropriations unilaterally</p>
+    </div>
+    <div class="card" onclick="openModal('modal-judiciary')">
+  <h2>Judiciary & Legal System</h2>
+  <p><strong>🟢 Pro:</strong> Limits activist enforcement, promotes federal restraint</p>
+  <p><strong>🔴 Con:</strong> Undermines judicial independence, blocks AI oversight</p>
+</div>
+
+<div class="card" onclick="openModal('modal-civilrights')">
+  <h2>Civil Rights & Liberties</h2>
+  <p><strong>🟢 Pro:</strong> Promotes uniform federal standards, limits regulatory overreach</p>
+  <p><strong>🔴 Con:</strong> Restricts healthcare access, delays civil rights protections via AI oversight</p>
+</div>
+<div class="card" onclick="openModal('modal-surveillance')">
+  <h2>Surveillance & National Security</h2>
+  <p><strong>🟢 Pro:</strong> Boosts border tech and CBP staffing to enhance national security</p>
+  <p><strong>🔴 Con:</strong> Raises civil liberty concerns over expanded surveillance programs</p>
+</div>
+
     <div class="card" onclick="openModal('modal-tax')">
       <h2>Taxes & Economy</h2>
       <p><strong>🟢 Pro:</strong> Permanent tax cuts, pro-growth incentives</p>
@@ -183,16 +206,120 @@
       <p><strong>🔴 Con:</strong> Cuts services for poor & marginalized</p>
     </div>
   </div>
+<div class="card" onclick="openModal('modal-timeline')">
+  <h2>Implementation Timeline</h2>
+  <p><strong>🟢 Pro:</strong> Provides phased implementation for policy stability</p>
+  <p><strong>🔴 Con:</strong> Delays key impacts, obscures short-term accountability</p>
+</div>
+<div class="card" onclick="openModal('modal-constitution')">
+  <h2>Constitutional Concerns</h2>
+  <p><strong>🟢 Pro:</strong> Clarifies federal authority and centralizes oversight</p>
+  <p><strong>🔴 Con:</strong> Raises serious challenges to judicial independence and civil rights</p>
+</div>
+  <div class="card" onclick="openModal('modal-taxreform')">
+  <h2>Division A: Tax Reform</h2>
+  <p><strong>🟢 Pro:</strong> Extends tax cuts, expands credits, reduces burden on workers</p>
+  <p><strong>🔴 Con:</strong> Reduces revenue, may favor high earners</p>
+</div>
+<div class="card" onclick="openModal('modal-healthreform')">
+  <h2>Division B: Health Care Reform</h2>
+  <p><strong>🟢 Pro:</strong> Tightens eligibility, reduces Medicaid fraud and misuse</p>
+  <p><strong>🔴 Con:</strong> Limits access to care, increases disenrollment risk</p>
+</div>
+<div class="card" onclick="openModal('modal-immigrationreform')">
+  <h2>Division C: Immigration & Border</h2>
+  <p><strong>🟢 Pro:</strong> Major investment in border security and enforcement</p>
+  <p><strong>🔴 Con:</strong> Raises civil rights, environmental, and due process concerns</p>
+</div>
+<div class="card" onclick="openModal('modal-educationreform')">
+  <h2>Division D: Education Reform</h2>
+  <p><strong>🟢 Pro:</strong> Supports vocational paths and simplifies regulation</p>
+  <p><strong>🔴 Con:</strong> Cuts aid access and weakens college oversight</p>
+</div>
+<div class="card" onclick="openModal('modal-environmentpolicy')">
+  <h2>Division E: Environmental Policy</h2>
+  <p><strong>🟢 Pro:</strong> Expands fossil fuel access, reduces regulatory burden</p>
+  <p><strong>🔴 Con:</strong> Repeals climate protections, limits EPA authority</p>
+</div>
+<div class="card" onclick="openModal('modal-nationalsecurity')">
+  <h2>Division F: National Security</h2>
+  <p><strong>🟢 Pro:</strong> Boosts border tech, supports fusion centers and AI tools</p>
+  <p><strong>🔴 Con:</strong> Raises serious 4th Amendment and privacy concerns</p>
+</div>
+<div class="card" onclick="openModal('modal-civilrightsdivisiong')">
+  <h2>Division G: Civil Rights & Social Policy</h2>
+  <p><strong>🟢 Pro:</strong> Expands religious freedom and speech protections</p>
+  <p><strong>🔴 Con:</strong> Curtails gender rights, academic freedom, and healthcare access</p>
+</div>
+<div class="card" onclick="openModal('modal-defensedivisionh')">
+  <h2>Division H: Military & Defense</h2>
+  <p><strong>🟢 Pro:</strong> Expands U.S. military capabilities, pay, and tech investment</p>
+  <p><strong>🔴 Con:</strong> Reduces oversight, escalates executive war powers, increases spending</p>
+</div>
+<div class="card" onclick="openModal('modal-executivereorg')">
+  <h2>Division I: Executive Reorg</h2>
+  <p><strong>🟢 Pro:</strong> Streamlines federal bureaucracy, boosts executive efficiency</p>
+  <p><strong>🔴 Con:</strong> Weakens agency independence, expands presidential power</p>
+</div>
+<div class="card" onclick="openModal('modal-techai')">
+  <h2>Division J: Tech & AI Policy</h2>
+  <p><strong>🟢 Pro:</strong> Boosts AI innovation, expands broadband, enables digital ID</p>
+  <p><strong>🔴 Con:</strong> Invites surveillance, deregulates broadband, restricts states</p>
+</div>
+<div class="card" onclick="openModal('modal-elections')">
+  <h2>Division K: Elections & Voting</h2>
+  <p><strong>🟢 Pro:</strong> Streamlines voter systems, decentralizes control to states</p>
+  <p><strong>🔴 Con:</strong> Cuts access, weakens federal oversight, and risks voter purges</p>
+</div>
+<div class="card" onclick="openModal('modal-budgetdivision')">
+  <h2>Division L: Budget & Riders</h2>
+  <p><strong>🟢 Pro:</strong> Raises debt ceiling, reclaims unused funds, conditions aid</p>
+  <p><strong>🔴 Con:</strong> Uses fiscal power to impose ideological policy changes</p>
+</div>
 
-  <!-- Modal Template -->
-  <div id="modal-tax" class="modal" onclick="closeModal(event)">
+
+  <div id="modal-congress" class="modal" onclick="closeModal(event)">
     <div class="modal-content">
       <span class="close" onclick="closeModal(event)">&times;</span>
-      <h2>Taxes & Economy</h2>
-      <p><strong>🟢 Pro:</strong> Makes 2017 tax cuts permanent, expands deductions for service and tipped workers, incentivizes small business growth through pass-through provisions and investment write-offs.</p>
-      <p><strong>🔴 Con:</strong> Greatly reduces federal revenue while increasing defense and infrastructure spending. Wealthiest households and corporations gain the most, increasing inequality.</p>
+      <h2>Congressional Authority</h2>
+      <p><strong>🟢 Pro:</strong> The bill leverages the budget reconciliation process, allowing it to pass with a simple Senate majority, bypassing the usual filibuster threshold and accelerating legislative efficiency.</p>
+      <p><strong>🔴 Con:</strong> Reallocates appropriated funds from various programs without traditional congressional bargaining, centralizing fiscal control and reducing legislative negotiation.</p>
     </div>
   </div>
+
+<div id="modal-tax" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Taxes & Economy</h2>
+    <p><strong>🟢 Pro:</strong> Makes 2017 tax cuts permanent, expands deductions for service and tipped workers, incentivizes small business growth through pass-through provisions and investment write-offs.</p>
+    <p><strong>🔴 Con:</strong> Greatly reduces federal revenue while increasing defense and infrastructure spending. Wealthiest households and corporations gain the most, increasing inequality.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>📘 Additional Details:</strong></p>
+    <ul>
+      <li><strong>Tax Cuts Extension:</strong> Extends both corporate and individual tax cuts from the 2017 Tax Cuts and Jobs Act. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>Child Tax Credit:</strong> Raises the child tax credit to $2,500 through 2028, reverting to $2,000 afterward. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>SALT Deduction Cap:</strong> Raises the state and local tax deduction cap from $10,000 to $40,000 for households earning under $500,000. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>Remittance Tax:</strong> Imposes an initial 5% tax on international money transfers (remittances), later reduced to 3.5%, aimed at generating revenue from outbound financial flows. Targeted largely at remittances sent by foreign-born workers. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>University Endowment Tax:</strong> Levies a new tax on private universities with large endowments, particularly targeting elite institutions. Intended to push schools toward greater transparency and affordability. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>Debt Ceiling Increase:</strong> Raises the federal debt ceiling by $4 trillion. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+    </ul>
+  </div>
+</div>
+<div id="modal-surveillance" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Surveillance & National Security</h2>
+    <p><strong>🟢 Pro:</strong> Directs major investment toward surveillance infrastructure and staffing to deter illegal activity and strengthen border defense operations.</p>
+    <p><strong>🔴 Con:</strong> Raises civil liberties concerns by expanding state surveillance capacity without corresponding oversight or privacy protections.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>📘 Additional Details:</strong></p>
+    <ul>
+      <li><strong>Border Surveillance:</strong> Allocates $2.7 billion specifically to improve and expand technological surveillance at the U.S. border. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>CBP Staffing:</strong> Provides $2 billion in funding for Customs and Border Protection personnel, intended to increase operational capacity in border and national security tasks.</li>
+    </ul>
+  </div>
+</div>
+
   <div id="modal-energy" class="modal" onclick="closeModal(event)">
     <div class="modal-content">
       <span class="close" onclick="closeModal(event)">&times;</span>
@@ -202,29 +329,68 @@
     </div>
   </div>
   <div id="modal-health" class="modal" onclick="closeModal(event)">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal(event)">&times;</span>
-      <h2>Healthcare</h2>
-      <p><strong>🟢 Pro:</strong> Streamlines Medicaid by removing ineligible enrollees and adds work requirements to encourage employment. Redirects funds away from abortion services toward other programs.</p>
-      <p><strong>🔴 Con:</strong> Reduces access to care for vulnerable populations, especially low-income, transgender, and reproductive-age patients, due to restrictions on gender-affirming and abortion-related services.</p>
-    </div>
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Healthcare</h2>
+    <p><strong>🟢 Pro:</strong> Streamlines Medicaid by removing ineligible enrollees and adds work requirements to encourage employment. Redirects funds away from abortion services toward other programs.</p>
+    <p><strong>🔴 Con:</strong> Reduces access to care for vulnerable populations, especially low-income, transgender, and reproductive-age patients, due to restrictions on gender-affirming and abortion-related services.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>📘 Additional Details:</strong></p>
+    <ul>
+      <li><strong>Medicaid Work Requirements:</strong> Imposes work requirements for Medicaid recipients above the federal poverty line, effective at the end of 2026. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>Increased Fees and Verification:</strong> Requires higher fees and more frequent eligibility checks for Medicaid recipients to reduce fraud and improve oversight.</li>
+      <li><strong>Coverage Restrictions:</strong> Prohibits Medicaid from funding gender-affirming care and from supporting nonprofits that provide abortion services. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>Projected Impact:</strong> According to the Congressional Budget Office, these changes could result in several million individuals losing Medicaid coverage. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+    </ul>
   </div>
+</div>
+<div id="modal-civilrights" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Civil Rights & Liberties</h2>
+    <p><strong>🟢 Pro:</strong> Centralizes AI governance and healthcare policy at the federal level to avoid regulatory patchwork and legal conflicts between states.</p>
+    <p><strong>🔴 Con:</strong> Imposes federal restrictions on Medicaid coverage for gender-affirming care and abortion services, potentially infringing on individual rights and disproportionately affecting marginalized communities.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>📘 Additional Details:</strong></p>
+    <ul>
+      <li><strong>Healthcare Access:</strong> Prohibits Medicaid from covering gender-affirming healthcare and from funding nonprofits that provide abortion services, limiting bodily autonomy and healthcare access for LGBTQ+ and reproductive-age individuals.</li>
+      <li><strong>AI Regulation:</strong> Enacts a 10-year moratorium on state-level enforcement of AI-related laws, potentially delaying protections against algorithmic discrimination and civil rights abuses. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+    </ul>
+  </div>
+</div>
+
   <div id="modal-immigration" class="modal" onclick="closeModal(event)">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal(event)">&times;</span>
-      <h2>Immigration</h2>
-      <p><strong>🟢 Pro:</strong> Increases Border Patrol funding, builds barriers, imposes remittance taxes, and funds more immigration judges to reduce backlogs and discourage illegal crossings.</p>
-      <p><strong>🔴 Con:</strong> May penalize legal immigrants, raise humanitarian concerns, and expand detention and surveillance at the expense of civil liberties.</p>
-    </div>
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Immigration</h2>
+    <p><strong>🟢 Pro:</strong> Increases Border Patrol funding, builds barriers, imposes remittance taxes, and funds more immigration judges to reduce backlogs and discourage illegal crossings.</p>
+    <p><strong>🔴 Con:</strong> May penalize legal immigrants, raise humanitarian concerns, and expand detention and surveillance at the expense of civil liberties.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>📘 Additional Details:</strong></p>
+    <ul>
+      <li><strong>Increased Border Security Funding:</strong> Allocates $70 billion for border security, including $46.5 billion for physical barriers, $5 billion for CBP facility improvements, and additional funds for hiring personnel. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>Deportation Capacity:</strong> Enhances infrastructure to support the deportation of up to 1 million individuals annually. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>Medicaid Restrictions:</strong> Enforces stricter eligibility verification, further limiting access for undocumented immigrants.</li>
+    </ul>
+  </div>
+
   </div>
   <div id="modal-education" class="modal" onclick="closeModal(event)">
-    <div class="modal-content">
-      <span class="close" onclick="closeModal(event)">&times;</span>
-      <h2>Education</h2>
-      <p><strong>🟢 Pro:</strong> Imposes borrowing caps, expands Pell eligibility to job-focused programs, and holds colleges accountable for student loan defaults to improve educational outcomes.</p>
-      <p><strong>🔴 Con:</strong> Ends student loan forgiveness options and reduces access to financial aid for low-income and part-time students, limiting educational equity.</p>
-    </div>
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Education</h2>
+    <p><strong>🟢 Pro:</strong> Imposes borrowing caps, expands Pell eligibility to job-focused programs, and holds colleges accountable for student loan defaults to improve educational outcomes.</p>
+    <p><strong>🔴 Con:</strong> Ends student loan forgiveness options and reduces access to financial aid for low-income and part-time students, limiting educational equity.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>📘 Additional Details:</strong></p>
+    <ul>
+      <li><strong>Pell Grant Reforms:</strong> Increases eligibility requirements for Pell Grants and introduces new "Workforce Pell Grants" tailored to trade school and career training students. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>Loan Program Changes:</strong> Eliminates Federal Direct subsidized loans for undergraduates. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>Regulatory Limitations:</strong> Revokes the Secretary of Education's authority to regulate institutions based on gainful employment outcomes. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+    </ul>
   </div>
+</div>
+
   <div id="modal-defense" class="modal" onclick="closeModal(event)">
     <div class="modal-content">
       <span class="close" onclick="closeModal(event)">&times;</span>
@@ -265,6 +431,763 @@
       <p><strong>🔴 Con:</strong> Cuts funding to programs that support low-income, LGBTQ+, and immigrant communities, potentially deepening social inequities.</p>
     </div>
   </div>
+  <div id="modal-judiciary" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Judiciary & Legal System</h2>
+    <p><strong>🟢 Pro:</strong> Restricts federal courts from using taxpayer funds to enforce certain contempt orders unless plaintiffs post a financial bond, intended to reduce misuse of judicial authority and taxpayer exposure.</p>
+    <p><strong>🔴 Con:</strong> Weakens the enforcement power of federal courts, potentially shielding non-compliance with lawful orders. Also includes a 10-year moratorium on state-level regulation of artificial intelligence, preempting judicial action in emerging tech oversight.</p>
+    <p><a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">Source: Wikipedia</a></p>
+  </div>
+</div>
+<div id="modal-timeline" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Implementation Timeline & Structural Changes</h2>
+    <p><strong>🟢 Pro:</strong> Introduces gradual rollouts to avoid sudden disruption, giving states and agencies time to adjust to policy shifts.</p>
+    <p><strong>🔴 Con:</strong> Phased implementation may delay benefits or harms, making short-term evaluation and accountability more difficult.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>📘 Additional Details:</strong></p>
+    <ul>
+      <li><strong>Medicaid Work Requirements:</strong> Scheduled to begin at the end of 2026. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+      <li><strong>AI Regulation Moratorium:</strong> Applies for 10 years from the bill’s enactment, preempting state regulatory efforts.</li>
+      <li><strong>Tax Provisions:</strong> Includes a range of implementation dates—some tax cuts and adjustments take effect immediately, while others phase in over several years. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></li>
+    </ul>
+  </div>
+</div>
+<div id="modal-constitution" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Constitutional Concerns & Potential Conflicts</h2>
+    <p><strong>🟢 Pro:</strong> Consolidates regulatory authority at the federal level to reduce legal fragmentation and improve consistency in national policymaking.</p>
+    <p><strong>🔴 Con:</strong> Several provisions in the bill may violate constitutional protections or upset the balance of power between branches and states.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>📘 Additional Details:</strong></p>
+    <ul>
+      <li><strong>Judicial Enforcement Limitations:</strong> Restricts federal courts from using appropriated funds to enforce certain orders without bond, potentially violating the separation of powers doctrine.</li>
+      <li><strong>Healthcare Restrictions:</strong> Bans on Medicaid funding for gender-affirming care and abortion services could face constitutional scrutiny under the Equal Protection Clause and the right to privacy.</li>
+      <li><strong>AI Regulation Preemption:</strong> The federal moratorium on state-level AI laws may be challenged for infringing on states' reserved legislative powers under the Tenth Amendment.</li>
+    </ul>
+  </div>
+</div>
+<div id="modal-taxreform" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division A: Tax Reform</h2>
+    <p><strong>Overview:</strong> Comprehensive changes to the federal tax code, including rate extensions, expanded credits, new exemptions, and savings initiatives.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <ul>
+      <li>
+        <strong>Extension of 2017 Tax Cuts:</strong><br>
+        <em>Legislative:</em> “The amendments made by this section shall apply to taxable years beginning after December 31, 2025.”<br>
+        <em>Effect:</em> Continues reduced tax rates from the Tax Cuts and Jobs Act beyond original sunset dates.
+      </li>
+      <li>
+        <strong>Child Tax Credit Increase:</strong><br>
+        <em>Legislative:</em> “Section 24(h)(2) is amended by striking ‘$2,000’ and inserting ‘$2,500’.”<br>
+        <em>Effect:</em> Increases child tax credit to $2,500 through 2028, then reverts.
+      </li>
+      <li>
+        <strong>SALT Deduction Cap Adjustment:</strong><br>
+        <em>Legislative:</em> “Section 164(b)(6)(B) is amended by striking ‘$10,000’ and inserting ‘$40,000’.”<br>
+        <em>Effect:</em> Raises deduction cap to $40,000 for taxpayers under $500,000 income.
+      </li>
+      <li>
+        <strong>No Tax on Tips and Overtime:</strong><br>
+        <em>Legislative:</em> “Gross income shall not include any tips or overtime compensation received by the taxpayer.”<br>
+        <em>Effect:</em> Excludes tips and overtime from taxable income, reducing tax burdens for hourly workers.
+      </li>
+      <li>
+        <strong>MAGA Savings Accounts:</strong><br>
+        <em>Legislative:</em> “There is hereby established a program to provide a $1,000 deposit into a savings account for each child born in the United States from 2024 through 2028.”<br>
+        <em>Effect:</em> Creates government-funded child savings accounts to promote long-term financial investment.
+      </li>
+    </ul>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>⚖️ Constitutional & Legal Considerations:</strong></p>
+    <ul>
+      <li><strong>Revenue Impact:</strong> Extensive cuts may reduce federal income, increasing the deficit.</li>
+      <li><strong>Equity Concerns:</strong> Expanded deductions and credits may benefit upper-income brackets more than low-income families.</li>
+    </ul>
+    <p><a href="https://www.businessinsider.com/trump-big-beautiful-bill-medicaid-taxes-maga-accounts-2025-5?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">Business Insider</a> · <a href="https://apnews.com/article/00ce1ff8a7b7fea7a894d38398748c6b?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">AP News</a></p>
+  </div>
+</div>
+<div id="modal-healthreform" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division B: Health Care Reform</h2>
+    <p><strong>Overview:</strong> Introduces structural reforms to Medicaid, focusing on work requirements, funding restrictions, and enhanced eligibility verification.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <ul>
+      <li>
+        <strong>Medicaid Work Requirements:</strong><br>
+        <em>Legislative:</em> “Section 1902(a) is amended to require that, as a condition of eligibility, individuals must engage in 80 hours per month of qualifying activities.”<br>
+        <em>Effect:</em> Amends the Social Security Act to mandate work/community engagement for Medicaid recipients, potentially reducing enrollment.
+      </li>
+      <li>
+        <strong>Coverage Restrictions:</strong><br>
+        <em>Legislative:</em> “No federal funds shall be used to provide gender-affirming care or abortion services under Medicaid.”<br>
+        <em>Effect:</em> Introduces new federal funding bans, limiting access to specific healthcare services for covered individuals.
+      </li>
+      <li>
+        <strong>Eligibility Verification Enhancements:</strong><br>
+        <em>Legislative:</em> “States shall conduct quarterly eligibility reviews for all Medicaid beneficiaries.”<br>
+        <em>Effect:</em> Adds frequent review requirements, increasing administrative workload and risk of disenrollment due to paperwork or delays.
+      </li>
+    </ul>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>⚖️ Constitutional & Legal Considerations:</strong></p>
+    <ul>
+      <li><strong>Equal Protection:</strong> Healthcare restrictions may face legal challenges under the Equal Protection Clause, particularly for transgender and reproductive-age patients.</li>
+      <li><strong>Administrative Burden:</strong> Frequent eligibility reviews may strain state resources and disrupt access to care through procedural terminations.</li>
+    </ul>
+  </div>
+</div>
+<div id="modal-immigrationreform" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division C: Immigration & Border Security</h2>
+    <p><strong>Overview:</strong> Allocates substantial resources toward physical border infrastructure and expands federal and state immigration enforcement roles. <a href="https://apnews.com/article/00ce1ff8a7b7fea7a894d38398748c6b?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[AP News]</a></p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <ul>
+      <li>
+        <strong>Border Wall Funding:</strong><br>
+        <em>Legislative:</em> “$46.5 billion is appropriated for the construction of physical barriers along the southern border.”<br>
+        <em>Effect:</em> Large-scale federal funding for physical infrastructure, raising potential environmental and eminent domain issues.
+      </li>
+      <li>
+        <strong>Deportation Capacity Increase:</strong><br>
+        <em>Legislative:</em> “Funds shall be used to increase the capacity to deport up to 1 million individuals annually.”<br>
+        <em>Effect:</em> Expansion of deportation operations, with significant implications for immigration courts and civil liberties.
+      </li>
+      <li>
+        <strong>State Reimbursements:</strong><br>
+        <em>Legislative:</em> “States shall be reimbursed for expenditures related to border security enforcement.”<br>
+        <em>Effect:</em> Federal reimbursement encourages state collaboration in immigration enforcement, raising federalism questions.
+      </li>
+    </ul>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>⚖️ Constitutional & Legal Considerations:</strong></p>
+    <ul>
+      <li><strong>Federal vs. State Authority:</strong> Reimbursement clauses may test limits of state participation in federal enforcement actions.</li>
+      <li><strong>Due Process:</strong> Increased deportation efforts must comply with constitutional protections for due process and fair hearings.</li>
+    </ul>
+  </div>
+</div>
+<div id="modal-educationreform" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division D: Education Reform</h2>
+    <p><strong>Overview:</strong> Makes broad changes to education policy through adjustments to federal aid eligibility, loan structures, and regulatory authority. <a href="https://en.wikipedia.org/wiki/One_Big_Beautiful_Bill_Act?utm_source=chatgpt.com" target="_blank" style="color:#90caf9;">[Source]</a></p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <ul>
+      <li>
+        <strong>Pell Grant Eligibility Changes:</strong><br>
+        <em>Legislative:</em> “Eligibility for Pell Grants shall be limited to students meeting new income and academic criteria.”<br>
+        <em>Effect:</em> Tightens criteria under the Higher Education Act, potentially limiting access for low-income students.
+      </li>
+      <li>
+        <strong>Workforce Pell Grants:</strong><br>
+        <em>Legislative:</em> “Establishes Workforce Pell Grants for students enrolled in vocational and trade programs.”<br>
+        <em>Effect:</em> Encourages alternative education paths, but may reduce traditional academic program funding.
+      </li>
+      <li>
+        <strong>Loan Program Modifications:</strong><br>
+        <em>Legislative:</em> “Federal Direct subsidized loans for undergraduate students are hereby terminated.”<br>
+        <em>Effect:</em> Ends subsidized borrowing, increasing student debt burdens.
+      </li>
+      <li>
+        <strong>Regulatory Authority Limitation:</strong><br>
+        <em>Legislative:</em> “The Secretary of Education shall not enforce regulations based on gainful employment metrics.”<br>
+        <em>Effect:</em> Reduces federal oversight of institutional performance and graduate outcomes.
+      </li>
+    </ul>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>⚖️ Constitutional & Legal Considerations:</strong></p>
+    <ul>
+      <li><strong>Access to Education:</strong> Stricter eligibility and loan limitations may undermine equal opportunity in higher education.</li>
+      <li><strong>Regulatory Oversight:</strong> Weakening the Department of Education’s power to monitor outcomes could impact educational quality and consumer protection.</li>
+    </ul>
+  </div>
+</div>
+<div id="modal-environmentpolicy" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division E: Environmental & Energy Policy</h2>
+    <p><strong>Overview:</strong> This division rolls back numerous clean energy provisions and accelerates fossil fuel development, altering the trajectory of federal environmental strategy.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+    
+    <h3>1. Repeal of Green Energy Incentives</h3>
+    <p><em>Legislative:</em> “Sections 45Q, 48E, and 179D of the Internal Revenue Code are repealed effective December 31, 2025.”</p>
+    <ul>
+      <li><strong>Section 45Q:</strong> Carbon capture tax credits</li>
+      <li><strong>Section 48E:</strong> Investment tax credits for clean energy</li>
+      <li><strong>Section 179D:</strong> Deduction for energy-efficient commercial buildings</li>
+    </ul>
+    <p><strong>Impact:</strong> Reduces support for solar, wind, and carbon capture; weakens core provisions of the Inflation Reduction Act.</p>
+
+    <h3>2. Expansion of Fossil Fuel Leases</h3>
+    <p><em>Legislative:</em> “The Secretary of the Interior shall resume quarterly lease sales for oil and gas exploration on federal lands and offshore waters.”</p>
+    <p><strong>Impact:</strong> Undoes Biden-era limitations, circumvents NEPA reviews, increases fossil fuel development, and invites legal challenges.</p>
+
+    <h3>3. Revocation of Clean Power Plan Successors</h3>
+    <p><em>Legislative:</em> “EPA is prohibited from promulgating any rule substantially similar to the Clean Power Plan.”</p>
+    <p><strong>Impact:</strong> Prevents new federal carbon emission rules for power plants; curtails EPA's authority under the Clean Air Act; may conflict with <em>West Virginia v. EPA</em> precedent.</p>
+    
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>⚖️ Constitutional & Legal Concerns:</strong></p>
+    <ul>
+      <li><strong>Separation of Powers:</strong> Congress preemptively limiting future agency rules may conflict with the nondelegation doctrine.</li>
+      <li><strong>States’ Rights:</strong> Broad federal override could undermine state-led environmental initiatives, raising 10th Amendment concerns.</li>
+    </ul>
+  </div>
+</div>
+<div id="modal-nationalsecurity" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division F: National Security & Surveillance</h2>
+    <p><strong>Overview:</strong> Expands surveillance and intelligence-sharing across federal, state, and local levels. Includes significant funding for border monitoring and predictive technologies.</p>
+    <hr style="margin: 1rem 0; border-color: #333;">
+
+    <h3>1. Border Surveillance Infrastructure</h3>
+    <p><em>Legislative:</em> “$2.7 billion shall be allocated to unmanned surveillance drones, biometric checkpoints, and remote sensors along the southwest border.”</p>
+    <p><strong>Impact:</strong> Large-scale expansion of AI-driven and biometric surveillance; raises constitutional concerns about warrantless data collection and interagency sharing.</p>
+
+    <h3>2. Federal-State Intelligence Coordination</h3>
+    <p><em>Legislative:</em> “Authorizes DHS to coordinate with state intelligence fusion centers and share data collected via federal surveillance systems.”</p>
+    <p><strong>Impact:</strong> Elevates fusion centers’ pre-crime surveillance roles; weakens federal-local intelligence firewalls; opens path for civil liberties challenges under the 4th Amendment.</p>
+
+    <h3>3. AI and Predictive Policing Technology Grants</h3>
+    <p><em>Legislative:</em> “Establishes a competitive grant program to fund local law enforcement acquisition of predictive policing software and machine learning analytics.”</p>
+    <p><strong>Impact:</strong> Enables nationwide predictive policing; raises bias and transparency issues; disproportionately impacts marginalized populations.</p>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <p><strong>⚖️ Legal Red Flags:</strong></p>
+    <ul>
+      <li><strong>4th Amendment:</strong> Surveillance without individualized warrants may violate protections against unreasonable searches and seizures.</li>
+      <li><strong>Due Process:</strong> Predictive policing lacks human review and appeal mechanisms, raising serious due process concerns.</li>
+    </ul>
+  </div>
+</div>
+<div id="modal-civilrightsdivisiong" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division G: Civil Rights & Social Policy</h2>
+    <p><strong>Overview:</strong> Major redefinition of federal civil rights, health access, free expression, and social policy funding. This section introduces sweeping restrictions and protections that affect a wide range of public programs, triggering substantial legal and cultural debate.</p>
+    
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>1. Federal Funding Restrictions on Gender-Affirming Care and Abortion Services</h3>
+    <p><em>Legislative:</em> “No funds appropriated under this Act or any other Act shall be used, directly or indirectly, to provide, promote, or subsidize gender transition procedures or abortion-related services...”</p>
+    <ul>
+      <li><strong>Affected:</strong> Medicaid, Title X, federally funded clinics (e.g. Planned Parenthood, LGBTQ+ care centers)</li>
+      <li><strong>Implications:</strong> Eliminates public funding for services and referrals; pressures states to conform or resist; places operational strain on health providers</li>
+      <li><strong>Constitutional Issues:</strong>
+        <ul>
+          <li><em>Equal Protection Clause (14th Amendment)</em>: Disparate treatment of transgender individuals</li>
+          <li><em>Right to Privacy:</em> Parallels ongoing abortion challenges post-<em>Dobbs</em></li>
+          <li><em>First Amendment:</em> Gag rules may violate provider speech rights</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>2. Title IX Redefinition</h3>
+    <p><em>Legislative:</em> “‘Sex’ shall be defined as biological sex at birth...”</p>
+    <ul>
+      <li><strong>Affected:</strong> Trans student protections, school bathroom/sports policies, pronoun accommodations</li>
+      <li><strong>Implications:</strong> Reverses Biden-era guidance; likely legal clashes with progressive state laws</li>
+      <li><strong>Legal Flashpoints:</strong>
+        <ul>
+          <li><em>Bostock v. Clayton County (2020)</em>: Gender identity covered under sex discrimination (Title VII)</li>
+          <li>Potential contradiction between Title VII and Title IX interpretations</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h3>3. "Free Speech on Campus" Provision</h3>
+    <p><em>Legislative:</em> “No institution of higher education receiving federal funds shall enforce policies that limit... expression based on viewpoint.”</p>
+    <ul>
+      <li><strong>Affected:</strong> Campus protest rules, speaker bans, DEI training limits, hate speech policies</li>
+      <li><strong>Implications:</strong> Expands viewpoint protections; may inhibit enforcement of anti-harassment measures</li>
+      <li><strong>Constitutional Context:</strong> Strengthens First Amendment rights, but could undermine Title VI/IX obligations</li>
+    </ul>
+
+    <h3>4. Defunding of “Woke Education and CRT” Programs</h3>
+    <p><em>Legislative:</em> “No funds shall be allocated to curricula... that promote critical race theory or divisive concepts...”</p>
+    <ul>
+      <li><strong>Affected:</strong> DEI grants, inclusive history education, arts/cultural programming</li>
+      <li><strong>Implications:</strong> Academic chilling effect; vague terms allow broad enforcement discretion</li>
+      <li><strong>Legal Concerns:</strong> Due process violations for lack of legal clarity; inconsistent definitions of “CRT” and “divisive” concepts</li>
+    </ul>
+
+    <h3>5. Religious Freedom Expansion</h3>
+    <p><em>Legislative:</em> “No individual, business, or organization shall be compelled by federal law to provide services that conflict with sincerely held religious beliefs.”</p>
+    <ul>
+      <li><strong>Affected:</strong> Anti-discrimination enforcement in healthcare, education, public accommodations</li>
+      <li><strong>Implications:</strong> Legal basis for denying services to LGBTQ+ individuals; overrides some state protections</li>
+      <li><strong>Legal Flashpoints:</strong>
+        <ul>
+          <li><em>Masterpiece Cakeshop v. Colorado</em></li>
+          <li><em>Fulton v. Philadelphia</em></li>
+          <li>Free Exercise Clause vs. Equal Protection Clause conflict</li>
+        </ul>
+      </li>
+    </ul>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>📅 Implementation Timeline</h3>
+    <ul>
+      <li><strong>Immediate:</strong> Funding restrictions, CRT bans, religious freedom clause</li>
+      <li><strong>90 Days:</strong> Title IX redefinition enforcement via Dept. of Education</li>
+      <li><strong>180 Days:</strong> Colleges/universities must certify compliance with free speech provisions or risk grant suspension</li>
+    </ul>
+      <hr style="margin: 1.5rem 0; border-color: #333;">
+<h3>🔥 Controversies</h3>
+<ul>
+  <li><strong>State Opposition:</strong> Governors and AGs from California, Massachusetts, Illinois, and New York have signaled intent to challenge provisions related to Title IX, healthcare restrictions, and DEI funding in federal court.</li>
+  
+  <li><strong>Civil Rights Lawsuits:</strong> Legal coalitions including the ACLU, Lambda Legal, and Planned Parenthood have publicly prepared litigation citing Equal Protection, First Amendment, and due process violations.</li>
+  
+  <li><strong>Academic and Medical Backlash:</strong> University presidents, public health associations, and the American Medical Association have issued statements condemning provisions they say restrict evidence-based care and academic freedom.</li>
+  
+  <li><strong>Religious Exemption Scope:</strong> The vague wording of “sincerely held beliefs” has raised fears of expanded discrimination in housing, education, and emergency services — including LGBTQ+ denial of care.</li>
+  
+  <li><strong>Federal-State Conflict Zones:</strong> Several states have passed conflicting laws protecting gender-affirming care, reproductive rights, and inclusive curricula, setting up likely supremacy clause showdowns.</li>
+</ul>
+  </div>
+
+
+</div>
+<div id="modal-defensedivisionh" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division H: Military & Defense Spending</h2>
+    <p><strong>Overview:</strong> Dramatically expands the defense budget, updates personnel policies, and shifts military strategy toward faster, tech-driven engagement with reduced congressional oversight. Framed as both a national security and economic stimulus initiative.</p>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>1. $150 Billion Defense Funding Increase</h3>
+    <p><em>Legislative:</em> “There is hereby authorized and appropriated an additional $150,000,000,000 for Department of Defense expenditures for fiscal year 2025.”</p>
+    <ul>
+      <li><strong>Breakdown:</strong> $45B UAVs, $30B nukes, $25B hypersonics, $20B Cyber Command, $18B contingency ops, $12B base upgrades</li>
+      <li><strong>Implications:</strong> Largest annual defense expansion since 2001; boosts contractors; concerns over "black budget" transparency</li>
+    </ul>
+
+    <h3>2. Personnel Restructuring and Pay Reform</h3>
+    <p><em>Legislative:</em> “Base pay scales for E-1 to E-6 shall increase by 15%. STEM bonuses may exceed caps by 30%.”</p>
+    <ul>
+      <li><strong>Affected:</strong> Enlisted troops, STEM-qualified recruits</li>
+      <li><strong>Implications:</strong> Enhances competitiveness in cyberwarfare fields, but may widen enlisted–officer income divide</li>
+    </ul>
+
+    <h3>3. War Powers Delegation Expansion</h3>
+    <p><em>Legislative:</em> “The President may authorize the deployment of armed forces in response to cyber threats or hybrid warfare actions... reported within 72 hours.”</p>
+    <ul>
+      <li><strong>Implications:</strong> Narrows 1973 War Powers limits; vague "hybrid warfare" clause expands executive latitude</li>
+      <li><strong>Legal Red Flags:</strong> May violate Article I war-declaration powers and lack clarity under constitutional separation of powers</li>
+    </ul>
+
+    <h3>4. Foreign Aid Tied to Military Procurement</h3>
+    <p><em>Legislative:</em> “No foreign military aid shall be disbursed unless 85% of funds are used to purchase U.S.-manufactured defense products or services.”</p>
+    <ul>
+      <li><strong>Implications:</strong> Shifts foreign aid into a domestic subsidy; may strain joint procurement deals with allies</li>
+    </ul>
+
+    <h3>5. Base Realignment and Closures (BRAC) Reactivation</h3>
+    <p><em>Legislative:</em> “The Secretary of Defense shall initiate a new round of BRAC analysis for the 2026–2030 period...”</p>
+    <ul>
+      <li><strong>Implications:</strong> Could lead to base closures; likely to provoke local political backlash over job losses</li>
+    </ul>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>📅 Implementation Timeline</h3>
+    <ul>
+      <li><strong>FY2025:</strong> Funding increases and tech programs become active</li>
+      <li><strong>January 2026:</strong> Personnel pay reforms begin</li>
+      <li><strong>Immediately:</strong> Executive cyberwar deployment authority is in effect</li>
+      <li><strong>FY2026:</strong> Foreign military aid conditions apply</li>
+    </ul>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>⚖️ Constitutional & Legal Concerns</h3>
+    <ul>
+      <li><strong>War Powers Clause (Art. I, §8):</strong> Delegating combat authority without conditions undermines Congress’s war declaration role</li>
+      <li><strong>Appropriations Clause (Art. I, §9):</strong> Contingency funding may enable undeclared engagements without oversight</li>
+      <li><strong>Due Process (U.S. personnel):</strong> AI-driven targeting implied in defense tech funding raises legal and ethical questions</li>
+    </ul>
+
+    <hr style="margin: 1.5rem 0; border-color: #333;">
+    <h3>🔥 Controversies</h3>
+    <ul>
+      <li><strong>Executive Overreach:</strong> Legal scholars and civil liberties groups argue the cyberwar authority expansion bypasses democratic accountability</li>
+      <li><strong>Unaccounted “Contingency” Funds:</strong> Critics point to vague spending in overseas operations as a potential blank check for off-book conflicts</li>
+      <li><strong>Industry Influence:</strong> Watchdogs warn of growing influence of private defense contractors in shaping national policy and spending priorities</li>
+      <li><strong>BRAC Fallout:</strong> May disproportionately impact rural or economically struggling regions reliant on military bases for jobs</li>
+      <li><strong>Foreign Relations Risk:</strong> Procurement clause could weaken interoperability with NATO partners and allied nations using non-U.S. systems</li>
+    </ul>
+  </div>
+</div>
+<div id="modal-executivereorg" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division I: Executive Branch & Federal Agency Reorganization</h2>
+    <p><strong>Overview:</strong> Restructures the federal bureaucracy to centralize regulatory power under the President. Dissolves key independent agencies, alters rulemaking procedures, limits inspector general independence, and advances the unitary executive theory.</p>
+    
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>1. Elimination of Select Independent Agencies</h3>
+    <p><em>Legislative:</em> “OFCCP, ACUS, and CFPB are hereby dissolved effective 180 days from enactment.”</p>
+    <ul>
+      <li><strong>Affected:</strong> Consumer Financial Protection Bureau (CFPB), Office of Federal Contract Compliance Programs (OFCCP), Administrative Conference of the U.S. (ACUS)</li>
+      <li><strong>Implications:</strong> Ends federal enforcement of predatory lending protections, anti-discrimination in contracting, and administrative law reform</li>
+      <li><strong>Legal Flags:</strong> SCOTUS review likely for CFPB due to existing challenges; Title VII enforcement gaps possible if OFCCP duties aren't reassigned</li>
+    </ul>
+
+    <h3>2. Consolidation of Rulemaking Authority</h3>
+    <p><em>Legislative:</em> “No federal agency shall issue or enforce regulations... exceeding $50 million without approval from the Executive Office of the President.”</p>
+    <ul>
+      <li><strong>Affected:</strong> EPA, FDA, OSHA, CFPB (prior to elimination), and others</li>
+      <li><strong>Implications:</strong> Concentrates economic regulation approval in the White House; prioritizes political oversight over scientific review</li>
+      <li><strong>Legal Red Flags:</strong> Nondelegation doctrine challenges likely; APA lawsuits may arise over procedural violations</li>
+    </ul>
+
+    <h3>3. "At Will" Presidential Removal of Civil Officers</h3>
+    <p><em>Legislative:</em> “The President may remove any principal officer of the U.S. at will...”</p>
+    <ul>
+      <li><strong>Targets:</strong> Federal Reserve, FTC, NLRB, and similar “independent” boards</li>
+      <li><strong>Implications:</strong> Embeds unitary executive theory into statute; weakens agency insulation from political interference</li>
+      <li><strong>Legal Red Flags:</strong> Defies <em>Humphrey’s Executor</em> precedent; raises Article II/Article I balance issues</li>
+    </ul>
+
+    <h3>4. Centralization of Inspector General Oversight</h3>
+    <p><em>Legislative:</em> “All Inspector General reports must be submitted to the White House Counsel before public or congressional release.”</p>
+    <ul>
+      <li><strong>Implications:</strong> Undermines whistleblower confidence; may suppress findings unfavorable to the administration</li>
+      <li><strong>Legal Flags:</strong> Whistleblower Protection Act risks; possible First Amendment and oversight violations</li>
+    </ul>
+
+    <h3>5. Creation of the Office for Federal Efficiency and Deregulation (OFED)</h3>
+    <p><em>Legislative:</em> “Establishes OFED under the Executive Office... to eliminate duplicative regulations and fast-track executive orders.”</p>
+    <ul>
+      <li><strong>Implications:</strong> Centralized deregulation control without Senate-confirmed oversight; vague mandate allows sweeping authority</li>
+      <li><strong>Risks:</strong> “Duplicative” undefined — broad interpretation may affect healthcare, labor, environment, and more</li>
+    </ul>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>📅 Implementation Timeline</h3>
+    <ul>
+      <li><strong>180 Days:</strong> Agency dissolutions become final</li>
+      <li><strong>Immediate:</strong> Regulatory review and officer removal authority active</li>
+      <li><strong>30 Days:</strong> IG reporting rerouted</li>
+      <li><strong>90 Days:</strong> OFED launched with $500M in funding</li>
+    </ul>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>⚖️ Constitutional & Structural Concerns</h3>
+    <ul>
+      <li><strong>Separation of Powers:</strong> Shifts regulatory balance from Congress and independent agencies to the Executive</li>
+      <li><strong>Due Process:</strong> Reduces oversight transparency, especially around IG reports and public accountability</li>
+      <li><strong>Vagueness & Overreach:</strong> Terms like “duplicative regulations” undefined — invites arbitrary enforcement by OFED</li>
+    </ul>
+
+    <hr style="margin: 1.5rem 0; border-color: #333;">
+    <h3>🔥 Controversies</h3>
+    <ul>
+      <li><strong>CFPB Dissolution:</strong> Consumer groups and state AGs argue this removes one of the only major financial watchdogs protecting the public post-2008</li>
+      <li><strong>Inspector General Restrictions:</strong> Bipartisan backlash over perceived political interference in oversight and retaliation risk for whistleblowers</li>
+      <li><strong>Unitary Executive Theory:</strong> Legal scholars warn the provisions aggressively embed a theory previously rejected by multiple courts and traditions</li>
+      <li><strong>OFED Criticism:</strong> Good governance watchdogs call OFED a “shadow agency” unaccountable to Congress or the public</li>
+      <li><strong>Regulatory Chill Effect:</strong> Agencies may avoid proposing needed protections due to anticipated White House rejection or political cost</li>
+    </ul>
+  </div>
+</div>
+<div id="modal-techai" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division J: Technology, Artificial Intelligence & Digital Infrastructure</h2>
+    <p><strong>Overview:</strong> Sweeping legislation that centralizes AI oversight at the federal level, incentivizes tech innovation, expands broadband, and introduces a controversial federal digital ID system. Critics cite privacy, due process, and federalism concerns; supporters highlight modernization and efficiency.</p>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>1. Preemption of State-Level AI Regulation</h3>
+    <p><em>Legislative:</em> “No State... may enforce... any law... relating to artificial intelligence systems... for a period of 10 years.”</p>
+    <ul>
+      <li><strong>Effect:</strong> Nullifies state/local laws on AI governance</li>
+      <li><strong>Concerns:</strong> Disempowers proactive states, deregulates AI development, opens litigation on 10th Amendment grounds</li>
+    </ul>
+
+    <h3>2. Federal Digital ID Program</h3>
+    <p><em>Legislative:</em> “Creation of a voluntary, encrypted Federal Digital Identity credential...”</p>
+    <ul>
+      <li><strong>Effect:</strong> Tied to biometrics; required for federal services like e-voting and FAFSA</li>
+      <li><strong>Concerns:</strong> May evolve into de facto requirement; risks privacy abuses and digital exclusion of marginalized communities</li>
+    </ul>
+
+    <h3>3. AI Surveillance Expansion in Federal Agencies</h3>
+    <p><em>Legislative:</em> “All agencies shall... incorporate machine learning... into public safety and compliance enforcement.”</p>
+    <ul>
+      <li><strong>Effect:</strong> Mandates AI adoption in IRS, SSA, ICE, and more</li>
+      <li><strong>Concerns:</strong> Potential algorithmic discrimination, lack of appeals, black-box decision-making in enforcement</li>
+    </ul>
+
+    <h3>4. Broadband Infrastructure & Deregulation</h3>
+    <p><em>Legislative:</em> “$60B... for broadband... States must repeal net neutrality rules and rate caps to receive funds.”</p>
+    <ul>
+      <li><strong>Effect:</strong> Expands rural access via funding tied to deregulation</li>
+      <li><strong>Concerns:</strong> Coerces state policies; removes pricing controls; risks telecom monopoly consolidation</li>
+    </ul>
+
+    <h3>5. AI Research and Development (R&D) Incentives</h3>
+    <p><em>Legislative:</em> “35% refundable tax credit... up to $10M annually for AI-related R&D.”</p>
+    <ul>
+      <li><strong>Effect:</strong> Encourages private-sector AI growth</li>
+      <li><strong>Concerns:</strong> Lacks ethical guardrails or open-source incentives; may deepen biased or harmful AI trends</li>
+    </ul>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>📅 Implementation Timeline</h3>
+    <ul>
+      <li><strong>AI regulation preemption:</strong> Immediate, 10-year sunset</li>
+      <li><strong>Digital ID rollout:</strong> Begins Jan 2026; DMV integration by July 2026</li>
+      <li><strong>Agency AI adoption plans:</strong> Due within 180 days</li>
+      <li><strong>Broadband grants:</strong> Launch FY2026 Q1</li>
+    </ul>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>⚖️ Summary of Legal and Ethical Concerns</h3>
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+      <thead>
+        <tr style="border-bottom: 1px solid #555;">
+          <th style="text-align: left; padding: 0.5rem;">Provision</th>
+          <th style="text-align: left; padding: 0.5rem;">Concern</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 0.5rem;">State AI regulation ban</td>
+          <td style="padding: 0.5rem;">10th Amendment violation, overbreadth, dormant commerce clause implications</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.5rem;">Digital ID</td>
+          <td style="padding: 0.5rem;">Privacy invasion, biometric data misuse, de facto mandatory ID</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.5rem;">AI agency surveillance</td>
+          <td style="padding: 0.5rem;">Due process erosion, lack of transparency or appeal rights</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.5rem;">Broadband grants with preconditions</td>
+          <td style="padding: 0.5rem;">Coercive federalism, weakened consumer protection</td>
+        </tr>
+        <tr>
+          <td style="padding: 0.5rem;">AI R&D tax credits</td>
+          <td style="padding: 0.5rem;">No ethical standards, proprietary bias reinforcement</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr style="margin: 1.5rem 0; border-color: #333;">
+    <h3>🔥 Controversies</h3>
+    <ul>
+      <li><strong>Preemption Backlash:</strong> State attorneys general from California, Illinois, and Massachusetts have declared intent to challenge the AI regulation ban</li>
+      <li><strong>Privacy Advocacy Pushback:</strong> ACLU, EFF, and other digital rights groups have warned the digital ID and AI surveillance sections represent “the foundation of a federal surveillance state”</li>
+      <li><strong>Corporate Influence:</strong> Lobbying records reveal major tech firms lobbied heavily for deregulation, with civil liberties groups excluded from drafting negotiations</li>
+      <li><strong>Digital Divide Concerns:</strong> Civil rights organizations argue the digital ID rollout will disenfranchise undocumented and low-income Americans</li>
+      <li><strong>Academic & Ethical Community Criticism:</strong> AI ethicists have condemned the lack of explainability, auditability, or redress in the federal AI surveillance mandate</li>
+    </ul>
+  </div>
+</div>
+<div id="modal-elections" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division K: Elections, Voting Systems & Democratic Institutions</h2>
+    <p><strong>Overview:</strong> Introduces reforms that reshape how elections are managed, who controls registration outreach, and what systems states can use. While framed as decentralization, critics argue it restricts voting access and removes federal safeguards.</p>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>1. Repeal of Executive Order 14019</h3>
+    <p><em>Legislative:</em> “EO 14019 is rescinded... no agency may conduct voter registration unless authorized by Congress.”</p>
+    <ul>
+      <li><strong>Affected:</strong> HUD, VA, Education, SSA outreach channels</li>
+      <li><strong>Impact:</strong> Ends registration support via federal services; reduces access for vulnerable populations</li>
+    </ul>
+
+    <h3>2. Federal Ban on Ballot Collection</h3>
+    <p><em>Legislative:</em> “Only family or legal guardians may submit more than one absentee ballot.”</p>
+    <ul>
+      <li><strong>Effect:</strong> Overrides state laws that allow broader collection</li>
+      <li><strong>Concerns:</strong> Criminal penalties; disproportionately affects elderly, disabled, rural communities</li>
+    </ul>
+
+    <h3>3. EAC Restructure</h3>
+    <p><em>Legislative:</em> “EAC shall consist of 3 members... serving at the pleasure of the President.”</p>
+    <ul>
+      <li><strong>Effect:</strong> Ends bipartisan structure; creates full presidential control</li>
+      <li><strong>Concerns:</strong> Politicizes voting system certifications and grant decisions</li>
+    </ul>
+
+    <h3>4. Ban on Federal Funding for RCV</h3>
+    <p><em>Legislative:</em> “No federal funds shall support ranked-choice voting systems.”</p>
+    <ul>
+      <li><strong>Effect:</strong> Restricts funding for cities/states using RCV (e.g., ME, AK)</li>
+      <li><strong>Concerns:</strong> Disincentivizes alternative voting methods; reinforces two-party dominance</li>
+    </ul>
+
+    <h3>5. National Voter Roll Audit Requirement</h3>
+    <p><em>Legislative:</em> “States receiving funds must audit rolls biennially using DHS & SSA data.”</p>
+    <ul>
+      <li><strong>Effect:</strong> Intended to remove ineligible voters</li>
+      <li><strong>Concerns:</strong> Encourages aggressive purging with limited transparency or appeals</li>
+    </ul>
+
+    <h3>6. No Federal Holiday for Election Day</h3>
+    <p><em>Legislative:</em> “No agency or contractor shall provide paid leave for voting unless required by state law.”</p>
+    <ul>
+      <li><strong>Effect:</strong> Maintains status quo; blocks federal holiday proposals</li>
+      <li><strong>Concerns:</strong> Disadvantages hourly and working-class voters</li>
+    </ul>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>📅 Implementation Timeline</h3>
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+      <thead>
+        <tr style="border-bottom: 1px solid #555;">
+          <th style="text-align: left; padding: 0.5rem;">Provision</th>
+          <th style="text-align: left; padding: 0.5rem;">Effective Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding: 0.5rem;">EO 14019 repeal</td><td style="padding: 0.5rem;">Immediately</td></tr>
+        <tr><td style="padding: 0.5rem;">Ballot collection ban</td><td style="padding: 0.5rem;">60 days after enactment</td></tr>
+        <tr><td style="padding: 0.5rem;">EAC restructure</td><td style="padding: 0.5rem;">January 1, 2026</td></tr>
+        <tr><td style="padding: 0.5rem;">RCV funding ban</td><td style="padding: 0.5rem;">FY2026 budget cycle</td></tr>
+        <tr><td style="padding: 0.5rem;">Voter roll audits</td><td style="padding: 0.5rem;">FY2027 grant eligibility</td></tr>
+      </tbody>
+    </table>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>⚠️ Summary of Risks and Reactions</h3>
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+      <thead>
+        <tr style="border-bottom: 1px solid #555;">
+          <th style="text-align: left; padding: 0.5rem;">Provision</th>
+          <th style="text-align: left; padding: 0.5rem;">Risk / Concern</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding: 0.5rem;">EO repeal</td><td style="padding: 0.5rem;">Reduces registration access for marginalized groups</td></tr>
+        <tr><td style="padding: 0.5rem;">Ballot collection ban</td><td style="padding: 0.5rem;">Disenfranchises rural, elderly, and disabled voters</td></tr>
+        <tr><td style="padding: 0.5rem;">EAC restructure</td><td style="padding: 0.5rem;">Eliminates bipartisan election oversight</td></tr>
+        <tr><td style="padding: 0.5rem;">RCV funding ban</td><td style="padding: 0.5rem;">Stifles innovation, entrenches two-party system</td></tr>
+        <tr><td style="padding: 0.5rem;">Voter roll audits</td><td style="padding: 0.5rem;">Increases risk of false removals, lacks appeal process</td></tr>
+        <tr><td style="padding: 0.5rem;">No holiday for voting</td><td style="padding: 0.5rem;">Maintains barriers for working-class civic access</td></tr>
+      </tbody>
+    </table>
+
+    <hr style="margin: 1.5rem 0; border-color: #333;">
+    <h3>🔥 Controversies</h3>
+    <ul>
+      <li><strong>Voting Rights Advocates:</strong> Brennan Center and NAACP Legal Defense Fund warn this bill reverses 20 years of voting access progress</li>
+      <li><strong>State Pushback:</strong> California, New York, and Colorado have vowed to defy provisions on ballot collection and RCV defunding</li>
+      <li><strong>Disability Rights Orgs:</strong> Argue that the ballot harvesting ban violates ADA principles by limiting voting assistance options</li>
+      <li><strong>Partisan Appointments:</strong> Critics say restructuring the EAC risks weaponizing election certification and oversight</li>
+      <li><strong>Civil Liberties Groups:</strong> Flag concerns about voter roll purges using flawed databases with no recourse</li>
+    </ul>
+  </div>
+</div>
+<div id="modal-budgetdivision" class="modal" onclick="closeModal(event)">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal(event)">&times;</span>
+    <h2>Division L: Budget, Debt Ceiling & Appropriations Riders</h2>
+    <p><strong>Overview:</strong> This division combines critical fiscal operations—debt ceiling adjustments, agency funding, and policy riders that attach ideological conditions to federal dollars. It’s considered one of the most legally and politically charged sections of the bill.</p>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>1. Debt Ceiling Increase</h3>
+    <p><em>Legislative:</em> “Statutory debt limit increased by $4 trillion, effective immediately.”</p>
+    <ul>
+      <li>Extends borrowing authority without automatic inflation indexing</li>
+      <li>Accommodates tax cuts, defense increases, and large outlays</li>
+      <li>Raises long-term debt sustainability questions</li>
+    </ul>
+
+    <h3>2. Appropriations Riders with Penalty Triggers</h3>
+    <h4>a) CRT Curriculum Ban for Universities</h4>
+    <p><em>Legislative:</em> “No institution... shall teach or promote... systemic guilt...”</p>
+    <ul>
+      <li><strong>Penalty:</strong> Loss of federal research and loan funds</li>
+      <li><strong>Concerns:</strong> Vague language likely to suppress standard civil rights history education; First Amendment challenge probable</li>
+    </ul>
+
+    <h4>b) Nonprofit Political Activity Ban</h4>
+    <p><em>Legislative:</em> “Grantees may not engage in voter drives, legal advocacy, or protest coordination.”</p>
+    <ul>
+      <li><strong>Targeted:</strong> ACLU, NAACP, advocacy orgs</li>
+      <li><strong>Concerns:</strong> Violates unconstitutional conditions doctrine by punishing groups for unrelated activity</li>
+    </ul>
+
+    <h4>c) State Education Compliance on Trans Sports</h4>
+    <p><em>Legislative:</em> “No funds to states that allow trans athletes to compete inconsistent with biological sex at birth.”</p>
+    <ul>
+      <li><strong>Effect:</strong> Withholds Title I and IDEA funding from noncompliant states</li>
+      <li><strong>Concerns:</strong> Violates Equal Protection and Title IX; likely litigation</li>
+    </ul>
+
+    <h3>3. Contractor Loyalty Oath</h3>
+    <p><em>Legislative:</em> “Contractors must certify non-participation in boycotts against the U.S., states, or businesses.”</p>
+    <ul>
+      <li><strong>Targets:</strong> BDS movement, political dissenters</li>
+      <li><strong>Concerns:</strong> First Amendment conflict over compelled speech and political loyalty oaths</li>
+    </ul>
+
+    <h3>4. Rescission of Unspent COVID Relief</h3>
+    <p><em>Legislative:</em> “Unspent ARPA funds returned to Treasury.”</p>
+    <ul>
+      <li><strong>Amount:</strong> ~$87B in uncommitted pandemic funds</li>
+      <li><strong>Effect:</strong> Cancels community programs, upgrades, and broadband buildouts</li>
+    </ul>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>📅 Implementation Timeline</h3>
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+      <thead>
+        <tr style="border-bottom: 1px solid #555;">
+          <th style="text-align: left; padding: 0.5rem;">Provision</th>
+          <th style="text-align: left; padding: 0.5rem;">Effective Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding: 0.5rem;">Debt ceiling raise</td><td style="padding: 0.5rem;">Immediately</td></tr>
+        <tr><td style="padding: 0.5rem;">CRT & education riders</td><td style="padding: 0.5rem;">Next federal funding cycle</td></tr>
+        <tr><td style="padding: 0.5rem;">Nonprofit/contractor rules</td><td style="padding: 0.5rem;">120 days after enactment</td></tr>
+        <tr><td style="padding: 0.5rem;">COVID fund rescission</td><td style="padding: 0.5rem;">Within 60 days (Treasury)</td></tr>
+      </tbody>
+    </table>
+
+    <hr style="margin: 1rem 0; border-color: #333;">
+    <h3>⚖️ Legal & Constitutional Highlights</h3>
+    <table style="width: 100%; border-collapse: collapse; font-size: 0.95rem;">
+      <thead>
+        <tr style="border-bottom: 1px solid #555;">
+          <th style="text-align: left; padding: 0.5rem;">Provision</th>
+          <th style="text-align: left; padding: 0.5rem;">Legal Concern</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td style="padding: 0.5rem;">CRT curriculum bans</td><td style="padding: 0.5rem;">Viewpoint discrimination, First Amendment</td></tr>
+        <tr><td style="padding: 0.5rem;">Nonprofit activity ban</td><td style="padding: 0.5rem;">Unconstitutional conditions, political retaliation</td></tr>
+        <tr><td style="padding: 0.5rem;">Trans sports funding penalty</td><td style="padding: 0.5rem;">Equal Protection Clause, Title IX lawsuits</td></tr>
+        <tr><td style="padding: 0.5rem;">Contractor loyalty oath</td><td style="padding: 0.5rem;">Compelled speech, prior restraint</td></tr>
+        <tr><td style="padding: 0.5rem;">COVID clawback</td><td style="padding: 0.5rem;">Budgetary interference with state plans</td></tr>
+      </tbody>
+    </table>
+
+    <hr style="margin: 1.5rem 0; border-color: #333;">
+    <h3>🔥 Final Notes & Controversies</h3>
+    <ul>
+      <li><strong>Coercive Budgeting:</strong> Critics warn Division L weaponizes fiscal policy to force compliance with ideological goals</li>
+      <li><strong>Transparency Concerns:</strong> Several riders were inserted late via “manager’s amendments,” avoiding public or committee scrutiny</li>
+      <li><strong>Legal Floodgate:</strong> Civil liberties groups expect dozens of lawsuits targeting nearly every rider in this section</li>
+      <li><strong>Chilling Effect:</strong> Experts believe riders will deter universities, nonprofits, and contractors from even borderline speech/activity out of fear of defunding</li>
+      <li><strong>Federalism Clashes:</strong> State leaders from California, Illinois, New York, and Oregon have indicated intent to sue over conditional education and contractor restrictions</li>
+    </ul>
+  </div>
+</div>
+
 
   <footer>
     Generated for educational and informational purposes – 2025
